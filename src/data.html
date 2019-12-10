@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="action.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="redirect()">
+    <h1>Students Information Registry</h1>
+    <span><a href="../public/index.html"><button type="button" onclick="logout()"id="logout">Logout</button></a></span>
+    <div id="container">
+      <form onsubmit="info(); return false">
+        <label>Student Name</label
+        ><input type="text" class="inf" id="Sname" required /><br />
+        <label>Gender</label>
+        <input
+          type="radio"
+          value="male"
+          class="inf"
+          id="Sgender"
+          name="gender"
+          style="width:20px"
+          required
+        />
+        <label>Male</label>
+        <input
+          type="radio"
+          value="female"
+          class="inf"
+          id="rad"
+          name="gender"
+          style="width:20px"
+          required
+        />
+        <label>Female</label><br />
+        <label>Age</label
+        ><input type="number" class="inf" id="Sage" required /><br />
+        <label>D.O.B</label
+        ><input type="date" class="inf" id="Sdob" required /><br />
+        <label>Degree</label
+        ><input type="text" class="inf" id="Sdegree" required /><br />
+        <label>Email</label
+        ><input type="mail" class="inf" id="Semail" required /><br />
+        <label>Mobile </label
+        ><input type="number" class="inf" id="Smobile" required /><br /><br />
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <a href="information.html"
+      ><button id="view" type="button">view all</button></a
+    >
+  </body>
+</html>
