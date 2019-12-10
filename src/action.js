@@ -46,7 +46,7 @@ xhttp.onreadystatechange=function(){
     if(this.readyState == 4 && this.status==200){
        
       alert("success");
-      window.location="../src/data.html";
+      window.location="src/data.html";
     }
     else{console.log("please register");
     }
@@ -97,7 +97,7 @@ function info(){
 function viewall(){
     var log= sessionStorage.getItem("loginID");
     if(!log){
-        window.location="../public/index.html";
+        window.location="../index.html";
     }
     var xhttp= new XMLHttpRequest();
     xhttp.onreadystatechange=function(){
@@ -130,7 +130,7 @@ function redirect(){
     var log= sessionStorage.getItem("loginID");
    
     if(!log){
-        window.location="../public/index.html";
+        window.location="../index.html";
        
     }
 }
@@ -141,6 +141,6 @@ function logout(){
 function fileload(){
     var fil= sessionStorage.getItem("loginID");
     if(fil){
-        window.location="../src/data.html";
+        window.location="src/data.html";
     }
 }
