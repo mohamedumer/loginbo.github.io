@@ -97,7 +97,7 @@ function info(){
 function viewall(){
     var log= sessionStorage.getItem("loginID");
     if(!log){
-        window.location="../index.html";
+        window.location="../FILENAME.html";
     }
     var xhttp= new XMLHttpRequest();
     xhttp.onreadystatechange=function(){
@@ -130,7 +130,7 @@ function redirect(){
     var log= sessionStorage.getItem("loginID");
    
     if(!log){
-        window.location="../index.html";
+        window.location="../FILENAME.html";
        
     }
 }
